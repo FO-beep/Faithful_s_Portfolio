@@ -19,7 +19,7 @@
 #
 
 ## Links
-#### Link to the deployed version:
+#### Link to the deployed version:https://fo-beep.github.io/Faithful_s_Portfolio/.
 #
 #### Github : https://github.com/FO-beep
 #
