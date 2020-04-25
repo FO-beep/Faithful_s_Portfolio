@@ -1,5 +1,5 @@
 # Faithful_s_Portfolio
-### Portfolio features an about me page, contact and work done. Most importantly it contains updated links to profiles such as linkedin, github.
+### My Portfolio features an About me page, Contact and a view of my work. Most importantly, it contains updated links to profiles such as linkedin, github.
 # 
 # 
 
