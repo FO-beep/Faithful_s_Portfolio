@@ -3,10 +3,9 @@
 $(".sendnoteBtn").on("click", function (event) {
     event.preventDefault();
     event.stopPropagation();
-    $(".sendnoteBtn").css("display", "none")
 
-    const confirm = $("<p>").text("Awesome")
-    $(confirm).addClass("form-group")
+    const verify = $("<h6>").text("Awesome!")
+    $(verify).addClass("form-input")
 })
 
-$("form").append(confirm)
+$("form").append(verify)
