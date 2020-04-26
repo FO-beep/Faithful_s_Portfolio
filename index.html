@@ -44,6 +44,9 @@
                     <li class="nav-item">
                         <a href="#contact" class="nav-link"> Contact </a>
                     </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link"> Resume </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -54,7 +57,7 @@
         <div class="container">
             <div class="row max-viewport align-items-center text-center">
                 <div class="col-md-6 d-none d-md-block">
-                    <img src="assets/img2_1.jpg" alt="bannerpic" class="img-fluid rounded-thumbnail">
+                    <img src="assets/img2_1.jpg" alt="img1" class="img-fluid rounded-thumbnail">
                 </div>
                 <div class="col-12 col-sm-6 mx-auto my-5">
                     <h1 class="text-white "> Hello! I'm Faithful </h1><br>
@@ -125,53 +128,100 @@
                     <h1 class="text-white text-uppercase"> Contact Me </h1>
                 </div>
                 <div class="col-sm-6 my-2">
-                    <a href="#" class="btn btn-lg btn-outline-warning text-uppercase"> Send me a note </a>
+                    <a href="contactform.html" class="btn btn-lg btn-outline-warning text-uppercase"> Send me a note
+                    </a>
                 </div>
-
             </div>
         </div>
     </section>
 
 
     <!------------- Portfolio Section ------------->
+    <!--------------MAKING SURE PORTFOLIO LINKs WRK---HERE-->
     <section id="portfolio" class="p-5 bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 my-3">
-                    <img src="assets/img1.jpg" class="img-fluid rounded" alt="project1">
-                    <h1 class="my-3"> Project 1 </h1>
-                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-                        vel saepe
-                        explicabo quidem odit, delectus autem consequatur, earum blanditiis qui velit
-                        laudantium et
-                        facere iste illo esse numquam debitis aut?</p>
+                    <img src="assets/workday-scheduler.gif" class="img-fluid rounded" alt="project1">
+                    <h1 class="my-3"> Work Day Scheduler </h1>
+
+                    <ButtonGroup as="span" className="py-2" role="group" aria-label="Button links for app info">
+                        <Button className="project-link" href={project.app} title={project.creation} target="_blank"
+                            rel="noreferrer" id="portfoliobtn"><a
+                                href="https://fo-beep.github.io/Faithfuls-Work-Day-Scheduler/"
+                                title="GitHub Repo: Faithfuls-Work-Day-Scheduler" target="_blank" rel="noreferrer"
+                                class="project-link btn btn-primary"> View </a></Button>
+
+                        <Button className="project-link" href={project.code} title={`GitHub Repo: ${project.creation}`}
+                            target="_blank" rel="noreferrer"><a
+                                href="https://github.com/FO-beep/Faithfuls-Work-Day-Scheduler"
+                                title="GitHub Repo: Faithfuls-Work-Day-Scheduler" target="_blank" rel="noreferrer"
+                                class="project-link btn btn-primary"> Code </a>
+                        </Button>
+                    </ButtonGroup>
+                    <p class="text-muted">I created a simple calendar application that allows you to save events
+                        for each hour of the day. Helps you to effectively manage your time.</p>
                 </div>
+
                 <div class="col-sm-6 my-3">
-                    <img src="assets/img1.jpg" class="img-fluid rounded" alt="project2">
-                    <h1 class="my-3"> Project 2 </h1>
-                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-                        vel saepe
-                        explicabo quidem odit, delectus autem consequatur, earum blanditiis qui velit
-                        laudantium et
-                        facere iste illo esse numquam debitis aut?</p>
+                    <img src="assets/code-quiz.gif" class="img-fluid rounded" alt="project2">
+                    <h1 class="my-3"> Code Quiz </h1>
+
+                    <ButtonGroup as="span" className="py-2" role="group" aria-label="Button links for app info">
+                        <Button className="project-link" href={project.app} title={project.creation} target="_blank"
+                            rel="noreferrer" id="portfoliobtn"><a href="https://fo-beep.github.io/Code-Quized/"
+                                title="GitHub Repo: Code-Quized" target="_blank" rel="noreferrer"
+                                class="project-link btn btn-primary"> View </a></Button>
+
+                        <Button className="project-link" href={project.code} title={`GitHub Repo: ${project.creation}`}
+                            target="_blank" rel="noreferrer"><a href="https://github.com/FO-beep/Code-Quized"
+                                title="GitHub Repo: Code-Quized" target="_blank" rel="noreferrer"
+                                class="project-link btn btn-primary"> Code </a>
+                        </Button>
+                    </ButtonGroup>
+                    <p class="text-muted"> A timed code quiz built with multiple-choice questions. When the game is
+                        over, you can save your score!</p>
                 </div>
+
                 <div class="col-sm-6 my-3">
-                    <img src="assets/img1.jpg" class="img-fluid rounded" alt="project3">
-                    <h1 class="my-3"> Project 3 </h1>
-                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-                        vel saepe
-                        explicabo quidem odit, delectus autem consequatur, earum blanditiis qui velit
-                        laudantium et
-                        facere iste illo esse numquam debitis aut?</p>
+                    <img src="assets/parkpic.jpg" class="img-fluid rounded" alt="project3">
+                    <h1 class="my-3"> Park Planner </h1>
+
+                    <ButtonGroup as="span" className="py-2" role="group" aria-label="Button links for app info">
+                        <Button className="project-link" href={project.app} title={project.creation} target="_blank"
+                            rel="noreferrer" id="portfoliobtn"><a href="https://andreagt91.github.io/Park-Planner/"
+                                title="GitHub Repo: Park-Planner" target="_blank" rel="noreferrer"
+                                class="project-link btn btn-primary"> View </a></Button>
+
+                        <Button className="project-link" href={project.code} title={`GitHub Repo: ${project.creation}`}
+                            target="_blank" rel="noreferrer"><a href="https://github.com/Andr/Park-Planner"
+                                title="GitHub Repo: Park-Planner" target="_blank" rel="noreferrer"
+                                class="project-link btn btn-primary"> Code </a>
+                        </Button>
+                    </ButtonGroup>
+                    <p class="text-muted">Park Planner an interactive website created which allows you to conveniently
+                        find
+                        parks in the State of Georgia. <br> A Team of 4 </p>
                 </div>
+
+
                 <div class="col-sm-6 my-3">
-                    <img src="assets/img1.jpg" class="img-fluid rounded" alt="project4">
-                    <h1 class="my-3"> Project 4 </h1>
-                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-                        vel saepe
-                        explicabo quidem odit, delectus autem consequatur, earum blanditiis qui velit
-                        laudantium et
-                        facere iste illo esse numquam debitis aut?</p>
+                    <img src="assets/passwordgen.png" class="img-fluid rounded" alt="project4">
+                    <h1 class="my-3"> Password Generator </h1>
+                    <ButtonGroup as="span" className="py-2" role="group" aria-label="Button links for app info">
+                        <Button className="project-link" href={project.app} title={project.creation} target="_blank"
+                            rel="noreferrer" id="portfoliobtn"><a href="https://fo-beep.github.io/Password-Generator-1/"
+                                title="GitHub Repo: Password-Generator-1" target="_blank" rel="noreferrer"
+                                class="project-link btn btn-primary"> View </a></Button>
+
+                        <Button className="project-link" href={project.code} title={`GitHub Repo: ${project.creation}`}
+                            target="_blank" rel="noreferrer"> <a href="https://github.com/FO-beep/Password-Generator-1"
+                                title="GitHub Repo: Password-Generator-1" target="_blank" rel="noreferrer"
+                                class="project-link btn btn-primary"> Code </a>
+                        </Button>
+                    </ButtonGroup>
+                    <p class="text-muted">An application that generates a random password based on user-selected
+                        criteria</p>
                 </div>
 
             </div>
@@ -183,10 +233,12 @@
     <section id="social" class="p-5">
         <div class="container-fluid">
             <div class="row align-items-center">
-                <div class="col-12 d-flex justify-content-between"><br><br>
+                <div class="col-12 d-flex justify-content-between"><br>
                     <!--- <a href="#"><i class="fa fa-facebook fa-5x text-warning m-3"></i></a>   -->
                     <a href="mailto:fullstacked.faith@gmail.com"><i class="fa fa-envelope fa-5x text-warning m-3"></i>
                         fullstacked.faith@gmail.com </a><br>
+                    <a href="#"><i class="fa fa-file fa-5x text-warning m-3"></i>
+                        Resume </a><br>
                     <!--- <a href="#"><i class="fa fa-twitter fa-5x text-warning m-3"></i></a>  -->
                 </div>
             </div>
@@ -198,17 +250,11 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <h6 class="text-white text-capitalize" id="copyright"> &copy; Copyright 2020 faithful </h6>
+                    <h6 class="text-white text-capitalize"> &copy; Copyright 2020 faithful </h6>
                 </div>
             </div>
         </div>
     </section>
-
-
-
-
-
-
 
 
 
@@ -243,6 +289,7 @@
     <script src="https://kit.fontawesome.com/c434180c99.js" crossorigin="anonymous"></script>
     <!-------- My jquery file ------>
     <script src="script.js"></script>
+
 
 </body>
 

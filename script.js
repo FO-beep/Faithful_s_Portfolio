@@ -1,4 +1,16 @@
-$(document).ready(function () {
+var porfolioBtn = $(document).querySelector("'#portfoliobtn");
 
-            //   $("#copyright").text((new Date).getFullYear());
-            //});//
+
+
+
+
+
+
+
+$(document).ready(function () {});
+
+//     $("#copyright").text((new Date).getFullYear());
+// });
+$("#portfoliobtn").on("click", function (event) {
+    event.preventDefault();
+});
