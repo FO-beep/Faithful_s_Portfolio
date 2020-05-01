@@ -43,3 +43,9 @@ p.lead {
     max-width: 250%;
     height: auto;
 }
+
+a {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+}
