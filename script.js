@@ -1,17 +1,6 @@
-var porfolioBtn = $(document).querySelector("'#portfoliobtn");
+const spanYear = document.querySelector("#currentYear");
+const currentYear = new Date();
 
+//console.log(currentYear);
 
-
-
-
-
-
-
-$(document).ready(function () {
-
-    //     $("#copyright").text((new Date).getFullYear());
-    // });
-    $("#portfoliobtn").on("click", function (event) {
-        event.preventDefault();
-    });
-});
+spanYear.innerText = currentYear.getFullYear();
